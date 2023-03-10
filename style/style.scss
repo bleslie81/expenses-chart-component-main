@@ -1,0 +1,119 @@
+$softred: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+$cream: hsl(27, 66%, 92%);
+$orange: hsl(33, 100%, 98%);
+$brown: hsl(28, 10%, 53%);
+$darkbrown: hsl(25, 47%, 15%);
+$medbrown: hsl(28, 15%, 81%);
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $cream;
+    font-family: 'DM Sans', sans-serif;
+    color: $brown;
+}
+
+#data{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    padding: 60px 10px 20px 10px;
+}
+.chartbox{
+    background: #fff;
+    border-radius: 10px;
+}
+.col{
+    padding: .3rem;
+}
+.days{
+    text-align: center;
+    :nth-child(odd){
+        margin-right: 12px;
+    }
+    :nth-child(even){
+        margin-right: 5px;
+    }
+}
+.floatnumber{
+    text-align:center; 
+    font-size: 12px; 
+    background: #fff; 
+    color: #fff;
+    padding: 3px 2px; 
+    margin-bottom: 5px; 
+    border-radius: 3px;
+    
+}
+
+.floatnumber:hover{
+    color: #000;
+}
+
+.valuehover{
+    background: $softred;
+    border-radius: 3px;
+}
+
+.col:hover .floatnumber{
+    background: #000000; 
+}
+
+.col:hover .valuehover{
+    background: $cyan;
+}
+
+.main{
+    margin: 0 auto;
+    width: 370px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.spending{
+    font-weight: 700;
+    color: #000;
+    position: absolute;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+.hr{
+    width: 90%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: $medbrown;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.percent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.balancebox{
+    background-color: $softred;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    display: flex;
+    align-items: center;
+}
